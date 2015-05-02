@@ -4,35 +4,95 @@
 }
 
 nav {
+	height: 4.5em;
+	overflow: hidden;
 	text-align: center;
-	background: #f4f4f9;
-	padding: 1em 0;
+	background: #232323;
+	padding: 0.8em 0;
 	position: fixed;
 	top: 0;
 	display: block;
 	box-sizing: border-box;
 	width: 100%;
 	z-index: 1000;
-	border-bottom: 1px solid #586F7C;
+}
+
+nav.active {
+	height: auto;
 }
 
 nav a {
 	display: block;
-	width: 80%;
+	width: 60%;
 	margin: 0 auto;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-weight: 600;
-	color: #232323;
+	color: #f4f4f9;
 	line-height: 2.3em;
 	padding: 0.4em 0.8em;
 	letter-spacing: 0.03em;
 }
 
+nav a.logo {
+	height: 3em;
+	background-image: url('../images/monofab_logo.png');
+	background-size: 150px;
+	background-repeat: no-repeat;
+	background-position: center 0.5em;
+	text-indent: 100%;
+}
+
 nav a:hover, nav a:focus {
-	/*background: #474747;*/
-	background: #323232;
+	background-color: #323232;
 	color: #f4f4f9;
+}
+
+/* Hamburger button */
+
+#nav-toggle {
+	position: absolute;
+	left: 1.4em;
+	top: 1.2em;
+	width: 35px;
+	cursor: pointer;
+	padding: 10px 35px 16px 0px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: '';
+}
+#nav-toggle span:before {
+  top: -10px; 
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+#nav-toggle:focus, #nav-toggle:hover {
+	background-color: transparent;
+}
+.active #nav-toggle span {
+  background-color: transparent;
+}
+.active #nav-toggle span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+.active #nav-toggle span:before {
+  transform: rotate(45deg);
+}
+.active #nav-toggle span:after {
+  transform: rotate(-45deg);
+  bottom: 0;
 }
 
 figure {
@@ -164,7 +224,6 @@ footer img {
 
 footer .six div p {
 	margin: 0;
-
 }
 
 
@@ -174,6 +233,14 @@ footer .six div p {
 	nav a {
 		display: inline-block;
 		width: auto;
+	}
+	nav a.logo {
+		width: 150px;
+		background-size: 90%;
+	}
+
+	#nav-toggle {
+		display: none;
 	}
 
 	#arm {
