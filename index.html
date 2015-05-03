@@ -4,26 +4,22 @@
 
   <!-- Basic Page Needs -->
   <meta charset="utf-8">
-  <title>Monofab 3D Prototyping</title>
-  <meta name="description" content="">
+  <title>monoFab</title>
+  <meta name="description" content="monoFab 3D Technológia a Roland DG segítségével">
   <meta name="author" content="Vinyl Grafik Studio">
 
   <!-- Mobile Specific Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- FONT -->
-  <link href='http://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href="http://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-  <link rel="stylesheet" href="css/icomoon.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/main.min.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png">
-  <script defer src="js/main.js"></script>
 
 </head>
 <body>
@@ -36,7 +32,7 @@
     <a href="#intro" class="logo">Monofab</a>
     <a href="#arm">ARM-10</a>
     <a href="#srm">SRM-20</a>
-    <a href="#adv">Előnyök</a>
+    <a href="#tips">Előnyök</a>
     <a href="#cta">Kapcsolat</a>
   </nav>
   <article role="main">
@@ -44,13 +40,13 @@
     <section id="intro">
         <div class="container" >
           <figure>
-            <img class="u-max-full-width" src="images/concept_bg_large_cut.jpg" alt="Roland's Desktop prototyping machines on a table" />
-            <figcaption>Image from Roland DG official website.</figcaption>
+            <img class="u-max-full-width" src="images/monofab_3d.jpg" srcset="images/monofab_3d_m 1.5x" alt="Roland asztali 3D marógép és 3D nyomtató egy modern környezetben" />
+            <figcaption>A kép eredeti verziója a <a href="http://www.rolanddg.com/monofab/concept/index.html">Roland DG</a> oldalán található.</figcaption>
           </figure>
           <h1 class="u-max-full-width">monoFab</h1>
           <h2>Valósítsd meg ötleteidet!</h2>
           <p>
-            A Rolandnál több, mint 25 éve hiszunk benne, hogy a képzelet és a gondolat ereje segítségével egyedülálló termékeket hozhatunk létre. Úttörőként az asztali prototípus gyártás területén, 1986 óta biztosítunk eszközöket hozzá, hogy mindenki valóra válthassa álmait. Ismerd meg a legújabb monoFab technológiánkat, amivel könnyen és gyorsan valosíthatod meg ötleteidet!
+            A Rolandnál több, mint 25 éve hiszünk benne, hogy a képzelet és a gondolat ereje segítségével egyedülálló termékeket hozhatunk létre. Úttörőként az asztali prototípus gyártás területén, 1986 óta biztosítunk eszközöket hozzá, hogy mindenki valóra válthassa álmait. Ismerd meg a legújabb monoFab technológiánkat, amivel könnyen és gyorsan valosíthatod meg ötleteidet!
           </p>
         </div>
     </section>
@@ -68,7 +64,7 @@
     <section id="arm">
       <div class="container">
         <figure class="six columns">
-          <img class="u-max-full-width" src="images/arm-10.jpg" alt="Roland ARM-10 3d printing machine" />
+          <img class="u-max-full-width" src="images/arm-10.jpg" srcset="images/arm-10_m.jpg 1.5x, images/arm-10_l.jpg 2x" alt="Roland ARM-10 3D nyomtató" />
         </figure>
         <div class="six columns">
           <h2>ARM-10</h2>
@@ -90,7 +86,7 @@
     <section id="srm">
       <div class="container u-cf">
         <figure class="six columns u-pull-right">
-          <img class="u-max-full-width" src="images/srm-20.jpg" alt="Roland SRM-20 3d milling machine" />
+          <img class="u-max-full-width" src="images/srm-20.jpg" rcset="images/srm-20_m.jpg 1.5x, images/srm-20_l.jpg 2x" alt="Roland SRM-20 3D marógép" />
         </figure>
         <div class="six columns">
           <h2>SRM-20</h2>
@@ -188,7 +184,10 @@
     </div>
   </footer>
 
-  
+  <!-- Mobile menu handler -->
+  <script>
+  document.querySelector("#nav-toggle").addEventListener("click",function(e){e.preventDefault(),this.parentElement.classList.toggle("active")});var e,t=document.querySelectorAll("nav a:not(#nav-toggle)"),n=t.length;for(e=0;n>e;e++)t[e].addEventListener("click",function(){this.parentElement.className.length>0&&(this.parentElement.className="")});
+  </script>
 
 <!-- End Document -->
 </body>
