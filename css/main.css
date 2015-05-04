@@ -962,13 +962,17 @@ nav a:hover, nav a:focus {
 .active #nav-toggle span {
   background-color: transparent;
 }
-.active #nav-toggle span:before, #nav-toggle.active span:after {
+.active #nav-toggle span:before, .active #nav-toggle span:after {
   top: 0;
 }
 .active #nav-toggle span:before {
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
 .active #nav-toggle span:after {
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
   bottom: 0;
 }
@@ -1000,7 +1004,7 @@ figure {
   height: 100%;
 }
 
-#intro h1 {
+h1 {
   box-sizing: border-box;
   width: 34rem;
   height: 5.3rem;
@@ -1101,8 +1105,6 @@ footer img {
 footer .six div p {
   margin: 0;
 }
-
-
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
