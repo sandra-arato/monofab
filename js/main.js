@@ -1,8 +1,9 @@
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener("DOMContentLoaded", function(){
 	document.querySelector( "#nav-toggle" )
 		.addEventListener( "click", function(e) {
 			e.preventDefault();
-			this.parentElement.classList.toggle( "active" );
+			var className = this.parentElement.className;
+			this.parentElement.className = className.length > 0 ? "" : "active";
 		});
 	var i,
 		otherLinks = document.querySelectorAll( "nav a:not(#nav-toggle)" ),
