@@ -876,7 +876,6 @@ hr {
 }
 
 /* OWN STYLES! */
-
 *, body {
   box-sizing: border-box;
   font-size: 16px;
@@ -1002,14 +1001,14 @@ figure {
 }
 
 #intro h1 {
-  width: 340px;
-  height: 53px;
-  background: url('../images/monofab_logo.png');
-  text-indent: 100%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-align: center;
+  box-sizing: border-box;
+  width: 34rem;
+  height: 5.3rem;
+  max-width: 100%;
+  background: url('../images/monofab_logo.png') 100% no-repeat;
   margin-top: 0.5em;
+  text-indent: 100%;
+  overflow: hidden;
 }
 
 #video {
@@ -1027,19 +1026,18 @@ figure {
   background: #fff;
   color: #e93f33;
   margin-bottom: 1em;
+  vertical-align: baseline;
 }
 
 #tips h2 span {
   display: inline-block;
-  width: 170px;
-  height: 26px;
-  background: url('../images/monofab_logo.png');
-  background-size: 100%;
+  font-size: 4rem;
+  width: 15rem;
+  height: 3.55rem;
+  background: url('../images/monofab_logo.png') 0 0.3em / 100% auto no-repeat;
   text-indent: 100%;
-  white-space: nowrap;
   overflow: hidden;
-  text-align: center;
-  margin-top: 0.5em;
+  white-space: nowrap;
 }
 
 #tips h3, #tips p {
@@ -1051,6 +1049,7 @@ figure {
   margin-bottom: 0.6em;
   font-weight: bold;
   letter-spacing: 0.04em;
+  line-height: 2em;
 }
 
 #tips h3 span {
@@ -1079,6 +1078,7 @@ figure {
   color: #e93f33;
   border-radius: 0.3em;
   margin-left: 1em;
+  white-space: nowrap;
 }
 
 footer {
@@ -1118,10 +1118,6 @@ footer .six div p {
   #nav-toggle {
     display: none;
   }
-
-  #arm {
-    /*text-align: right;*/
-  }
 }
 
 @media (min-width: 750px) {
@@ -1135,12 +1131,11 @@ footer .six div p {
 /* Larger than desktop */
 @media (min-width: 1000px) {
   .videowrapper {
-    /*padding-bottom: 20%;*/
+    padding-bottom: 46.25%;
   }
 
   #intro p {
     font-size: 22px;
   }
 }
-
 
