@@ -220,7 +220,7 @@
 
   <!-- Mobile menu handler -->
   <script>
-  document.querySelector("#nav-toggle").addEventListener("click",function(e){e.preventDefault(),this.parentElement.classList.toggle("active")});var e,t=document.querySelectorAll("nav a:not(#nav-toggle)"),n=t.length;for(e=0;n>e;e++)t[e].addEventListener("click",function(){this.parentElement.className.length>0&&(this.parentElement.className="")});
+  document.querySelector("#nav-toggle").addEventListener("click",function(e){e.preventDefault(); var t=this.parentElement.className; this.parentElement.className=t.length>0?"":"active";});var i,otherLinks=document.querySelectorAll("nav a:not(#nav-toggle)"),len=otherLinks.length;for(i=0;len>i;i++)otherLinks[i].addEventListener("click",function(){this.parentElement.className.length>0&&(this.parentElement.className="")});
   </script>
 
 <!-- End Document -->
