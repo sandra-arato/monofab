@@ -143,7 +143,7 @@ h1 {
 }
 
 #tips {
-	background: #586f7c;
+	background: #6d828d;
 }
 
 #tips h2 {
@@ -177,6 +177,7 @@ h1 {
 	font-weight: bold;
 	letter-spacing: 0.04em;
 	line-height: 2em;
+	word-break: break-all;
 }
 
 #tips h3 span {

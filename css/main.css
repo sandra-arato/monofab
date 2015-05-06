@@ -818,13 +818,17 @@ hr {
   display: table;
   clear: both; }
 
+
+/*
+Icomoon
+*/
 @font-face {
   font-family: 'icomoon';
-  src:url('../fonts/icomoon.eot?pf52nt');
-  src:url('../fonts/icomoon.eot?#iefixpf52nt') format('embedded-opentype'),
-    url('../fonts/icomoon.woff?pf52nt') format('woff'),
-    url('../fonts/icomoon.ttf?pf52nt') format('truetype'),
-    url('../fonts/icomoon.svg?pf52nt#icomoon') format('svg');
+  src:url('../fonts/icomoon.eot?st81lv');
+  src:url('../fonts/icomoon.eot?#iefixst81lv') format('embedded-opentype'),
+    url('../fonts/icomoon.woff?st81lv') format('woff'),
+    url('../fonts/icomoon.ttf?st81lv') format('truetype'),
+    url('../fonts/icomoon.svg?st81lv#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -843,36 +847,28 @@ hr {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-cloud:before {
+.icon-connection-empty:before {
   content: "\e600";
 }
 
-.icon-lock:before {
+.icon-checkbox-checked:before {
   content: "\e601";
 }
 
-.icon-diamond:before {
+.icon-stopwatch:before {
   content: "\e602";
+}
+
+.icon-atom:before {
+  content: "\e604";
+}
+
+.icon-heart:before {
+  content: "\e605";
 }
 
 .icon-banknote:before {
   content: "\e603";
-}
-
-.icon-lab:before {
-  content: "\e604";
-}
-
-.icon-fire:before {
-  content: "\e605";
-}
-
-.icon-vynil:before {
-  content: "\e606";
-}
-
-.icon-world:before {
-  content: "\e607";
 }
 
 /* OWN STYLES! */
@@ -1021,7 +1017,7 @@ h1 {
 }
 
 #tips {
-  background: #586f7c;
+  background: #6d828d;
 }
 
 #tips h2 {
@@ -1055,6 +1051,7 @@ h1 {
   font-weight: bold;
   letter-spacing: 0.04em;
   line-height: 2em;
+  word-break: break-all;
 }
 
 #tips h3 span {
@@ -1106,6 +1103,8 @@ footer img {
 footer .six div p {
   margin: 0;
 }
+
+
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {
